@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7caa41abaf6ede98f5d0512fa9831a2f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7caa41abaf6ede98f5d0512fa9831a2f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7caa41abaf6ede98f5d0512fa9831a2f = L.map(
+                "map_7caa41abaf6ede98f5d0512fa9831a2f",
+                {
+                    center: [40.7127281, -74.0060152],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3017c0bc8add3734f266b04037b2ae69 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3017c0bc8add3734f266b04037b2ae69.addTo(map_7caa41abaf6ede98f5d0512fa9831a2f);
+        
+    
+            var marker_7f8e859875b502b472428df84395da11 = L.marker(
+                [40.7127281, -74.0060152],
+                {
+}
+            ).addTo(map_7caa41abaf6ede98f5d0512fa9831a2f);
+        
+    
+            var icon_d8381bbd1467c0351b54bce888fc332d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95d207e11c43a0b1839bbecbb101d626 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d3b7f43d4724dc012fb7b35c802108d = $(`<div id="html_3d3b7f43d4724dc012fb7b35c802108d" style="width: 100.0%; height: 100.0%;">You</div>`)[0];
+                popup_95d207e11c43a0b1839bbecbb101d626.setContent(html_3d3b7f43d4724dc012fb7b35c802108d);
+            
+        
+
+        marker_7f8e859875b502b472428df84395da11.bindPopup(popup_95d207e11c43a0b1839bbecbb101d626)
+        ;
+
+        
+    
+    
+                marker_7f8e859875b502b472428df84395da11.setIcon(icon_d8381bbd1467c0351b54bce888fc332d);
+            
+    
+            var marker_f34a873762c9987c476658438fb24441 = L.marker(
+                [40.7138, -74.005],
+                {
+}
+            ).addTo(map_7caa41abaf6ede98f5d0512fa9831a2f);
+        
+    
+            var icon_b6e67d6d040546b9865f006c8d7cb059 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dd5b5cb6fa262d991c774df536c9b819 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cdbd5a1ca7cb09f2122ab8914973e2c = $(`<div id="html_9cdbd5a1ca7cb09f2122ab8914973e2c" style="width: 100.0%; height: 100.0%;">ID: bus1<br>Vehicle: bus<br>Distance: 0.29 km<br>ETA: 58.3 min (ML)</div>`)[0];
+                popup_dd5b5cb6fa262d991c774df536c9b819.setContent(html_9cdbd5a1ca7cb09f2122ab8914973e2c);
+            
+        
+
+        marker_f34a873762c9987c476658438fb24441.bindPopup(popup_dd5b5cb6fa262d991c774df536c9b819)
+        ;
+
+        
+    
+    
+                marker_f34a873762c9987c476658438fb24441.setIcon(icon_b6e67d6d040546b9865f006c8d7cb059);
+            
+    
+            var marker_12ca6b014673ffb10d3312843def11ae = L.marker(
+                [40.709, -74.01],
+                {
+}
+            ).addTo(map_7caa41abaf6ede98f5d0512fa9831a2f);
+        
+    
+            var icon_c5f97fa7f1ab7acef059ae83de38e922 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "truck",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83edeb0ce489514f60cc4a509ce0bc82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6093359a7eed931320dc9d8599495b56 = $(`<div id="html_6093359a7eed931320dc9d8599495b56" style="width: 100.0%; height: 100.0%;">ID: truck1<br>Vehicle: truck<br>Distance: 1.52 km<br>ETA: 58.3 min (ML)</div>`)[0];
+                popup_83edeb0ce489514f60cc4a509ce0bc82.setContent(html_6093359a7eed931320dc9d8599495b56);
+            
+        
+
+        marker_12ca6b014673ffb10d3312843def11ae.bindPopup(popup_83edeb0ce489514f60cc4a509ce0bc82)
+        ;
+
+        
+    
+    
+                marker_12ca6b014673ffb10d3312843def11ae.setIcon(icon_c5f97fa7f1ab7acef059ae83de38e922);
+            
+    
+            var marker_6dfa132a7afbcb0bda4c47fa5e4bad90 = L.marker(
+                [40.715, -74.007],
+                {
+}
+            ).addTo(map_7caa41abaf6ede98f5d0512fa9831a2f);
+        
+    
+            var icon_e6f567cd32b1f2e5d67f50e2ac7b81cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bicycle",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f393eda8e503620e153863e3e9d83d3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8d08c48c027dc640dbe391e61e6d7bb = $(`<div id="html_d8d08c48c027dc640dbe391e61e6d7bb" style="width: 100.0%; height: 100.0%;">ID: bike1<br>Vehicle: bike<br>Distance: 0.84 km<br>ETA: 58.3 min (ML)</div>`)[0];
+                popup_9f393eda8e503620e153863e3e9d83d3.setContent(html_d8d08c48c027dc640dbe391e61e6d7bb);
+            
+        
+
+        marker_6dfa132a7afbcb0bda4c47fa5e4bad90.bindPopup(popup_9f393eda8e503620e153863e3e9d83d3)
+        ;
+
+        
+    
+    
+                marker_6dfa132a7afbcb0bda4c47fa5e4bad90.setIcon(icon_e6f567cd32b1f2e5d67f50e2ac7b81cd);
+            
+</script>
+</html>
